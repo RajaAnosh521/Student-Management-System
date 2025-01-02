@@ -14,6 +14,7 @@ class StudentForm(forms.ModelForm):
       'field_of_study': 'Field of Study',
       'gpa': 'GPA'
     }
+    
     widgets = {
       'student_number': forms.NumberInput(attrs={'class': 'form-control'}),
       'first_name': forms.TextInput(attrs={'class': 'form-control'}),
