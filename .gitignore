@@ -1,0 +1,4 @@
+.venv
+.env
+psycopg2
+psycopg2_binary-2.9.10.dist-info
