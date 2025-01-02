@@ -23,3 +23,4 @@ class StudentForm(forms.ModelForm):
       'field_of_study': forms.TextInput(attrs={'class': 'form-control'}),
       'gpa': forms.NumberInput(attrs={'class': 'form-control'}),
     }
+    
