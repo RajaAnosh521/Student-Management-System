@@ -75,4 +75,5 @@ Open your browser and go to http://127.0.0.1:8000/ to access the application.
 Log in to the admin panel at http://127.0.0.1:8000/admin/ with the superuser credentials.
 
 Screenshots:
+
 ![alt text](https://raw.githubusercontent.com/BobsProgrammingAcademy/Student-Management-System/refs/heads/master/students/static/images/homepage.png)
