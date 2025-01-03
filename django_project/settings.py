@@ -14,6 +14,8 @@ from pathlib import Path
 from dotenv import load_dotenv
 import os  
 
+import dj_database_url
+
 # Load environment variables from .env
 load_dotenv()
 
@@ -80,13 +82,17 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.getenv("dbname"),
-        'USER': os.getenv("user"),
-        'PASSWORD': os.getenv("password"),
-        'HOST': os.getenv("host"),
-        'PORT': os.getenv("port"),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('PGDATABASE'),
+        'USER': os.getenv('PGUSER'),
+        'PASSWORD': os.getenv('PGPASSWORD'),
+        'HOST': os.getenv('PGHOST'),
+        'PORT': os.getenv('PGPORT'), 
     }
+}  
+
+DATABASES = {
+    'default': dj_database_url.config(default=os.getenv('DATABASE_URL')),
 }
 
 # DATABASES = {
