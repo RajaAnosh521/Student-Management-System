@@ -147,7 +147,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# CSRF_TRUSTED_ORIGINS = [
-    # 'https://student-management-system-production-b488.up.railway.app',
-# ]
+CSRF_TRUSTED_ORIGINS = [
+    'https://student-management-system-production-ed5f.up.railway.app',
+]
 
