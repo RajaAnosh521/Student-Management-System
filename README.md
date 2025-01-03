@@ -20,7 +20,7 @@ Follow the steps below to set up the project on your local machine:
 
 Clone this repository to your local machine:
 
-    git clone <repository-url>
+    git clone https://github.com/RajaAnosh521/Student-Management-System.git
     cd Student-Management-System
 
 2. Create a Virtual Environment
